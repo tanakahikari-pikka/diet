@@ -9,9 +9,10 @@ diet/
 ├── CLAUDE.md              # このファイル
 ├── goals.md               # 目標設定
 ├── checklist_master.md    # チェックリスト項目マスター（編集用）
-├── checklist_initial.md   # 初回診断チェックリスト
-├── checklist_weekly.md    # 週間チェックリスト
-├── data/                  # CSVデータ
+├── data/                  # データ
+│   ├── checklist/         # チェックリスト回答
+│   │   ├── YYYY-MM-DD.csv # 回答データ
+│   │   └── YYYY-MM-DD.md  # 結果サマリー
 │   ├── weight.csv         # 体重記録
 │   ├── meals.csv          # 食事記録
 │   └── exercise.csv       # 運動記録
@@ -69,8 +70,7 @@ diet/
 - `進捗確認` - 目標に対する進捗を確認
 
 **チェックリスト系**
-- `初回診断` - 初回診断チェックリストを実施（checklist_master.md参照）
-- `週間チェック` - 週間チェックリストを実施（checklist_master.md参照）
+- `チェックリスト` - 習慣チェックを実施（いつでも実行可）
 - `項目を追加` - チェックリストに新しい項目を追加（checklist_master.mdを編集）
 - `項目を編集` - チェックリストの項目を変更（checklist_master.mdを編集）
 
@@ -78,5 +78,7 @@ diet/
 
 1. **項目の変更**はすべて `checklist_master.md` で行う
 2. チェック実施時は `checklist_master.md` を読み込んで最新の項目を使う
-3. 結果は `checklist_initial.md` または `checklist_weekly.md` に記録
+3. 結果は `data/checklist/` に日付ごとに保存
+   - `YYYY-MM-DD.csv` - 回答データ
+   - `YYYY-MM-DD.md` - 結果サマリー
 4. スコア基準も `checklist_master.md` に定義されている
