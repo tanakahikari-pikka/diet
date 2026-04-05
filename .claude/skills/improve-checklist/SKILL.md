@@ -1,4 +1,5 @@
 ---
+name: improve-checklist
 description: チェックリスト改善提案
 ---
 

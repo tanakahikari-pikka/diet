@@ -1,4 +1,5 @@
 ---
+name: set-goal
 description: ダイエット目標設定
 ---
 
