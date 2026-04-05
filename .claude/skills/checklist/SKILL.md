@@ -1,4 +1,5 @@
 ---
+name: checklist
 description: 習慣チェックリスト回答
 ---
 
